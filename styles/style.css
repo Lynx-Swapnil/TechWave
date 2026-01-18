@@ -301,3 +301,44 @@ header button {
   border-radius: 50%;
   cursor: pointer;
 }
+footer{
+  text-align: center;
+  background-image: url(../assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  height: 412px;
+}
+footer h1 {
+ font-size: 60px;
+  font-weight: 800;
+  color: #FFFFFF;
+  padding-top: 115px;
+}
+footer .foot-logo {
+  background: linear-gradient(90deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+footer .footer-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 34px;
+}
+footer .footer-content{
+  font-size: 16px;
+  font-weight: 500;
+  color: #C9C4D6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+footer p{
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #C9C4D6;
+  margin-bottom: 120px;
+}
