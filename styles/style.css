@@ -14,6 +14,7 @@ header {
   background-color: #1A0B2E;
   padding-top: 30px;
   padding-bottom: 30px;
+  border: 1px solid #2E1A40;
 }
 header h2 {
   font-size: 40px;
@@ -103,4 +104,53 @@ header button {
   border-radius: 10000px;
   cursor: pointer;
   margin-left: 8px;
+}
+.about{
+  background-color: #1A0B2E;
+}
+.about .about-content{
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 80px 20px; */
+  text-align: center;
+}
+.about .about-content h3{
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.about .about-content p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #627382;
+}
+.about hr{
+  margin: 80px auto;
+  border: 0.5px solid #2E1A40;
+  max-width: 1200px;
+}
+.about .about-rating{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  max-width: 1200px;
+   margin: 0 auto;
+  padding-bottom: 120px;
+}
+.about .about-rating .rate h3{
+  font-size: 48px;
+  font-weight: 900;
+  color: #00FF88;
+  margin-bottom: 16px;
+}
+.about .about-rating .rate p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+} 
+.about .about-rating .rate{
+  text-align: center;
 }
