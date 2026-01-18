@@ -7,14 +7,23 @@
 .inter {
   font-family: "Inter", sans-serif;
 }
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+}
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #1A0B2E;
+  background-color: #1a0b2e;
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 1px solid #2E1A40;
+  border: 1px solid #2e1a40;
 }
 header h2 {
   font-size: 40px;
@@ -34,10 +43,14 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #C9C4D6;
+  color: #c9c4d6;
   font-weight: 500;
   font-size: 16px;
   line-height: 120%;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #00ff88;
 }
 header button {
   padding: 12px 16px;
@@ -49,13 +62,13 @@ header button {
   border-radius: 10000px;
   cursor: pointer;
 }
-.banner{
+.banner {
   background-image: url(../assets/hero-bg.png);
   background-size: cover;
   background-position: center;
   min-height: 760px;
 }
-.banner-img{
+.banner-img {
   position: relative;
   width: 100%;
   height: 80%;
@@ -66,25 +79,25 @@ header button {
   padding-bottom: 40px;
 }
 
-.banner .microphone{
+.banner .microphone {
   position: absolute;
 }
-.banner .banner-heading{
+.banner .banner-heading {
   text-align: center;
 }
-.banner .banner-heading h1{
+.banner .banner-heading h1 {
   font-size: 60px;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 8px;
 }
-.banner .banner-heading p{
+.banner .banner-heading p {
   font-size: 16px;
   font-weight: 400;
-  color: #C9C4D6;
+  color: #c9c4d6;
   margin-bottom: 24px;
 }
-.banner .banner-heading .banner-button1{
+.banner .banner-heading .banner-button1 {
   padding: 12px 20px;
   font-size: 16px;
   font-weight: 600;
@@ -94,175 +107,175 @@ header button {
   border-radius: 10000px;
   cursor: pointer;
 }
-.banner .banner-heading .banner-button2{
+.banner .banner-heading .banner-button2 {
   padding: 12px 20px;
   font-size: 16px;
   font-weight: 600;
-  color: #00FF88;
+  color: #00ff88;
   background: transparent;
-  border: 1px solid #00FF88;
+  border: 1px solid #00ff88;
   border-radius: 10000px;
   cursor: pointer;
   margin-left: 8px;
 }
-.about{
-  background-color: #1A0B2E;
+.about {
+  background-color: #1a0b2e;
 }
-.about .about-content{
+.about .about-content {
   max-width: 1200px;
   margin: 0 auto;
   /* padding: 80px 20px; */
   text-align: center;
 }
-.about .about-content h3{
+.about .about-content h3 {
   font-size: 48px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 16px;
 }
-.about .about-content p{
+.about .about-content p {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #C9C4D6;
+  color: #c9c4d6;
 }
-.about hr{
+.about hr {
   margin: 80px auto;
-  border: 0.5px solid #2E1A40;
+  border: 0.5px solid #2e1a40;
   max-width: 1200px;
 }
-.about .about-rating{
+.about .about-rating {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 80px;
   max-width: 1200px;
-   margin: 0 auto;
+  margin: 0 auto;
   padding-bottom: 120px;
 }
-.about .about-rating .rate h3{
+.about .about-rating .rate h3 {
   font-size: 48px;
   font-weight: 900;
-  color: #00FF88;
+  color: #00ff88;
   margin-bottom: 16px;
 }
-.about .about-rating .rate p{
+.about .about-rating .rate p {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  color: #C9C4D6;
-} 
-.about .about-rating .rate{
+  color: #c9c4d6;
+}
+.about .about-rating .rate {
   text-align: center;
 }
-.choose{
-  background-color: #230E3D;
+.choose {
+  background-color: #230e3d;
   padding: 120px 200px;
 }
-.choose h2{
+.choose h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
-.choose .choose-content{
+.choose .choose-content {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(3, 1fr); */
   gap: 30px;
 }
-.choose .choose-card{
+.choose .choose-card {
   background-color: rgba(53, 17, 101, 0.4);
   border: 1px solid rgba(53, 17, 101, 0.4);
   border-radius: 40px;
   padding: 32px;
   /* text-align: center; */
 }
-.choose .choose-card h3{
+.choose .choose-card h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 16px 0;
 }
-.choose .choose-card p{
+.choose .choose-card p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #C9C4D6;
+  color: #c9c4d6;
 }
-.choose .box1{
+.choose .box1 {
   grid-row: span 2;
 }
-.choose .box2{
+.choose .box2 {
   grid-column: span 2;
 }
-.choose .box3{
+.choose .box3 {
   grid-column: span 2;
 }
-.choose .box4{
+.choose .box4 {
   grid-column: span 2;
 }
-.feature{
-  background-color: #1A0B2E;
+.feature {
+  background-color: #1a0b2e;
   padding: 120px 200px;
 }
-.feature .feature-container{
+.feature .feature-container {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.feature h2{
+.feature h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
-.feature .feature-card{
+.feature .feature-card {
   max-width: 380px;
-  background-color: #250D44;
-  border: 1px solid #250D44;
+  background-color: #250d44;
+  border: 1px solid #250d44;
   border-radius: 20px;
   /* padding: 24px; */
 }
-.feature .feature-card iframe{
+.feature .feature-card iframe {
   width: 100%;
   height: 214px;
   border-radius: 20px;
 }
-.feature .feature-card-info{
+.feature .feature-card-info {
   padding: 24px;
 }
-.feature .feature-card h3{
+.feature .feature-card h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 12px;
 }
-.feature .feature-card p{
+.feature .feature-card p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #C9C4D6;
+  color: #c9c4d6;
   /* margin-bottom: 12px; */
 }
-.feature .feature-card .time{
-  color: #00FF88;
+.feature .feature-card .time {
+  color: #00ff88;
 }
-.host{
-  background-color: #1A0B2E;
+.host {
+  background-color: #1a0b2e;
   /* padding: 120px 200px; */
   padding-bottom: 120px;
 }
-.host h2{
+.host h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
-.host .host-container{
+.host .host-container {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -273,24 +286,24 @@ header button {
   border-radius: 40px;
   margin: 0 auto;
 }
-.host .host-container h3{
+.host .host-container h3 {
   font-size: 32px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 16px;
 }
-.host .host-container p{
+.host .host-container p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #C9C4D6;
+  color: #c9c4d6;
 }
-.host .host-social{
+.host .host-social {
   display: flex;
   gap: 10px;
   margin-top: 16px;
 }
-.host .host-social .social{
+.host .host-social .social {
   width: 40px;
   height: 40px;
   background-color: rgba(53, 17, 101, 0.4);
@@ -301,7 +314,7 @@ header button {
   border-radius: 50%;
   cursor: pointer;
 }
-footer{
+footer {
   text-align: center;
   background-image: url(../assets/footer-bg.png);
   background-size: cover;
@@ -310,9 +323,9 @@ footer{
   height: 412px;
 }
 footer h1 {
- font-size: 60px;
+  font-size: 60px;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 115px;
 }
 footer .foot-logo {
@@ -321,24 +334,30 @@ footer .foot-logo {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-footer .footer-container{
+footer .footer-container {
   display: flex;
   justify-content: center;
   gap: 40px;
   margin-top: 34px;
 }
-footer .footer-content{
+footer .footer-content {
   font-size: 16px;
   font-weight: 500;
-  color: #C9C4D6;
+  color: #c9c4d6;
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-footer p{
+footer .footer-content:hover {
+  color: #00ff88;
+  transform: translateY(-3px);
+}
+footer p {
   margin-top: 32px;
   font-size: 16px;
   font-weight: 400;
-  color: #C9C4D6;
+  color: #c9c4d6;
   margin-bottom: 120px;
 }
