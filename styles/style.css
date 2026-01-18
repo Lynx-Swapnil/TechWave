@@ -250,3 +250,54 @@ header button {
 .feature .feature-card .time{
   color: #00FF88;
 }
+.host{
+  background-color: #1A0B2E;
+  /* padding: 120px 200px; */
+  padding-bottom: 120px;
+}
+.host h2{
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.host .host-container{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border: 1px solid rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  margin: 0 auto;
+}
+.host .host-container h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.host .host-container p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #C9C4D6;
+}
+.host .host-social{
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.host .host-social .social{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border: 3px solid rgba(53, 17, 101, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
