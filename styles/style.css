@@ -34,7 +34,7 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #C9C4D6;
   font-weight: 500;
   font-size: 16px;
   line-height: 120%;
@@ -81,7 +81,7 @@ header button {
 .banner .banner-heading p{
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #C9C4D6;
   margin-bottom: 24px;
 }
 .banner .banner-heading .banner-button1{
@@ -124,7 +124,7 @@ header button {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #627382;
+  color: #C9C4D6;
 }
 .about hr{
   margin: 80px auto;
@@ -149,8 +149,57 @@ header button {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #C9C4D6;
 } 
 .about .about-rating .rate{
   text-align: center;
+}
+.choose{
+  background-color: #230E3D;
+  padding: 120px 200px;
+}
+.choose h2{
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.choose .choose-content{
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  gap: 30px;
+}
+.choose .choose-card{
+  background-color: rgba(53, 17, 101, 0.4);
+  border: 1px solid rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 32px;
+  /* text-align: center; */
+}
+.choose .choose-card h3{
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 16px 0;
+}
+.choose .choose-card p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #C9C4D6;
+}
+.choose .box1{
+  grid-row: span 2;
+}
+.choose .box2{
+  grid-column: span 2;
+}
+.choose .box3{
+  grid-column: span 2;
+}
+.choose .box4{
+  grid-column: span 2;
 }
