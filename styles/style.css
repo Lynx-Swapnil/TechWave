@@ -18,6 +18,23 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
 }
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 40px rgba(0, 255, 136, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 0.2);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -135,11 +152,11 @@ header button {
   cursor: pointer;
   margin-left: 8px;
 }
+
 .about {
   background-color: #1a0b2e;
   padding-top: 120px;
 }
-
 .about .about-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -186,6 +203,7 @@ header button {
 .about .about-rating .rate {
   text-align: center;
 }
+
 .choose {
   background-color: #230e3d;
   padding: 120px 200px;
@@ -241,6 +259,7 @@ header button {
 .choose-card:hover img {
   transform: scale(1.1) rotate(-2deg);
 }
+
 .feature {
   background-color: #1a0b2e;
   padding: 120px 200px;
@@ -288,6 +307,7 @@ header button {
 .feature .feature-card .time {
   color: #00ff88;
 }
+
 .host {
   background-color: #1a0b2e;
   /* padding: 120px 200px; */
@@ -343,6 +363,7 @@ header button {
 .host .host-social .social:hover {
   transform: translateY(-3px);
 }
+
 footer {
   text-align: center;
   background-image: url(../assets/footer-bg.png);
@@ -450,6 +471,7 @@ footer p {
     left: 70%;
     transform: translateX(-50%);
   }
+
   .about {
     padding-top: 40px;
   }
@@ -457,21 +479,24 @@ footer p {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
+
   .choose {
     padding: 60px 20px;
   }
   .choose .choose-content {
     grid-template-columns: 1fr;
   }
+.choose-card {
+    width: 352px;
+  }
+
   .feature {
     padding: 60px 20px;
   }
   .feature .feature-container {
     flex-direction: column;
   }
-  .choose-card {
-    width: 352px;
-  }
+  
   .host {
     padding: 60px 20px;
   }
@@ -482,15 +507,18 @@ footer p {
   .host .host-container .host-social {
     justify-content: center;
   }
+
   .footer-container {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .about .about-rating {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
+
   .choose {
     padding: 80px 40px;
   }
@@ -503,6 +531,7 @@ footer p {
   .box4 {
     grid-column: span 2;
   }
+
   .feature {
     padding: 80px 40px;
   }
@@ -510,6 +539,7 @@ footer p {
     flex-wrap: wrap;
     justify-content: center;
   }
+  
   .host {
     padding: 80px 40px;
   }
