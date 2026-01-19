@@ -21,13 +21,19 @@
 
 @keyframes pulseGlow {
   0% {
-    box-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 0.2);
+    box-shadow:
+      0 0 10px rgba(0, 255, 136, 0.4),
+      0 0 20px rgba(0, 255, 136, 0.2);
   }
   50% {
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 40px rgba(0, 255, 136, 0.4);
+    box-shadow:
+      0 0 20px rgba(0, 255, 136, 0.8),
+      0 0 40px rgba(0, 255, 136, 0.4);
   }
   100% {
-    box-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 0.2);
+    box-shadow:
+      0 0 10px rgba(0, 255, 136, 0.4),
+      0 0 20px rgba(0, 255, 136, 0.2);
   }
 }
 
@@ -486,7 +492,7 @@ footer p {
   .choose .choose-content {
     grid-template-columns: 1fr;
   }
-.choose-card {
+  .choose-card {
     width: 352px;
   }
 
@@ -496,7 +502,7 @@ footer p {
   .feature .feature-container {
     flex-direction: column;
   }
-  
+
   .host {
     padding: 60px 20px;
   }
@@ -539,7 +545,7 @@ footer p {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .host {
     padding: 80px 40px;
   }
