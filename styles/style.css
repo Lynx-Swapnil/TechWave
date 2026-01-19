@@ -235,6 +235,12 @@ header button {
 .choose .box4 {
   grid-column: span 2;
 }
+.choose-card img {
+  transition: transform 0.4s ease;
+}
+.choose-card:hover img {
+  transform: scale(1.1) rotate(-2deg);
+}
 .feature {
   background-color: #1a0b2e;
   padding: 120px 200px;
