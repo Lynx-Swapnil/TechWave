@@ -22,7 +22,9 @@
   <body class="inter">
     <header>
       <h2>Tech<span class="logo">Wave</span></h2>
-      <button class="hamburger"><img src="assets/hamburger-menu.png" alt=""></button>
+      <button class="hamburger">
+        <img src="assets/hamburger-menu.png" alt="" />
+      </button>
       <nav>
         <ul>
           <li><a href="">About</a></li>
@@ -260,39 +262,39 @@
       <div class="foot">
         <h1>Tech<span class="foot-logo">Wave</span></h1>
 
-      <div class="footer-container">
-        <div class="footer-content">
-          <i class="fa-brands fa-spotify"></i>&nbsp;Spotify
+        <div class="footer-container">
+          <div class="footer-content">
+            <i class="fa-brands fa-spotify"></i>&nbsp;Spotify
+          </div>
+          <div class="footer-content">
+            <i class="fa-solid fa-podcast"></i>&nbsp;Apple Podcasts
+          </div>
+          <div class="footer-content">
+            <i class="fa-brands fa-youtube"></i>&nbsp;YouTube
+          </div>
+          <div class="footer-content">
+            <i class="fa-brands fa-twitter"></i>&nbsp;Twitter
+          </div>
         </div>
-        <div class="footer-content">
-          <i class="fa-solid fa-podcast"></i>&nbsp;Apple Podcasts
-        </div>
-        <div class="footer-content">
-          <i class="fa-brands fa-youtube"></i>&nbsp;YouTube
-        </div>
-        <div class="footer-content">
-          <i class="fa-brands fa-twitter"></i>&nbsp;Twitter
-        </div>
-      </div>
-      
-      <p>© 2026 TechWave Podcast. All rights reserved.</p>
+
+        <p>© 2026 TechWave Podcast. All rights reserved.</p>
       </div>
     </footer>
     <script>
       // Mobile menu toggle
-      const hamburger = document.querySelector('.hamburger');
-      const nav = document.querySelector('header nav');
-      
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        nav.classList.toggle('active');
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("header nav");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
       });
-      
+
       // Close menu when clicking a link
-      document.querySelectorAll('header nav a').forEach(link => {
-        link.addEventListener('click', () => {
-          hamburger.classList.remove('active');
-          nav.classList.remove('active');
+      document.querySelectorAll("header nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          nav.classList.remove("active");
         });
       });
     </script>

@@ -72,7 +72,6 @@ header button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 .banner-img {
   position: relative;
@@ -96,7 +95,7 @@ header button {
   transform: translateX(100%);
 
   background: #00ff88;
-  color: #1A0B2E;
+  color: #1a0b2e;
   font-size: 18px;
   font-weight: 600;
   padding: 8px 16px;
@@ -345,7 +344,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
-footer .foot{
+footer .foot {
   padding: 120px 0;
 }
 footer h1 {
@@ -388,9 +387,8 @@ footer p {
   /* margin-bottom: 120px; */
 }
 
-
 @media screen and (max-width: 576px) {
-   header button {
+  header button {
     display: none;
   }
   header nav {
@@ -436,8 +434,8 @@ footer p {
     justify-content: space-between;
     padding: 16px 20px;
   }
-  
-   .banner{
+
+  .banner {
     padding-bottom: 40px;
   }
   .banner-img .new-badge {
@@ -447,9 +445,9 @@ footer p {
     transform: translateX(-50%);
   }
   .about {
-  padding-top: 40px;
-}
-   .about .about-rating {
+    padding-top: 40px;
+  }
+  .about .about-rating {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
@@ -465,20 +463,52 @@ footer p {
   .feature .feature-container {
     flex-direction: column;
   }
-  .choose-card{
+  .choose-card {
     width: 352px;
   }
-  .host{
+  .host {
     padding: 60px 20px;
   }
   .host .host-container {
     flex-direction: column-reverse;
     text-align: center;
   }
- .host .host-container .host-social {
+  .host .host-container .host-social {
     justify-content: center;
   }
- .footer-container{
-  flex-wrap: wrap;
- }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .about .about-rating {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  .choose {
+    padding: 80px 40px;
+  }
+  .choose .choose-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    grid-column: span 2;
+  }
+  .feature {
+    padding: 80px 40px;
+  }
+  .feature .feature-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .host {
+    padding: 80px 40px;
+  }
+  .host .host-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
